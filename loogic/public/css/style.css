@@ -1,0 +1,16 @@
+
+.tarea
+{
+    margin-left: 1em;
+}
+
+.fecha{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.ocutlo
+{
+    display: none;
+}
