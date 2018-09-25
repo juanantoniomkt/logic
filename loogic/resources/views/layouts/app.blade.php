@@ -15,7 +15,7 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
     <script src="{{ asset('js/ajax.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -61,15 +61,11 @@
                     
                                   <ul class="navbar-nav mr-auto">
                                     <li class="nav-item dropdown">
-                                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                      <a class="nav-link" href="{{route('proyectos.index')}}">
                                         Proyectos
                                       </a>
-                                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    
-                                          <a class="dropdown-item" href="{{route('proyectos.index')}}">Listar</a>
-                                          <a class="dropdown-item" href="{{route('proyectos.create')}}">Agregar</a>
-                    
-                                      </div>
+
                                     </li
                                   </ul>
                     
@@ -131,5 +127,11 @@
         </main>
 
     </div>
+
+    <footer>
+
+    @yield('js')
+
+    </footer>
 </body>
 </html>

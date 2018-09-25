@@ -33,11 +33,11 @@ class ProyectoController extends Controller
     {
         $proyecto = Proyecto::find($id);
 
-        $proyecto-> nombre = $request->nombre;
+        $proyecto->nombre = $request->nombre;
 
         $proyecto -> save();
 
-        return redirect()->route('proyectos.index');
+        return $proyecto;        
         
     }
 
