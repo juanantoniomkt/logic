@@ -35,6 +35,7 @@ function eliminarTarea(id)
 
 }
 
+/*
 function incluirProyecto()
 {
 
@@ -68,9 +69,8 @@ function incluirProyecto()
             "</form>");
 
         });
-
         
 
-    
-
 }
+*/
+

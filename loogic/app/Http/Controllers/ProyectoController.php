@@ -68,6 +68,6 @@ class ProyectoController extends Controller
 
         $proyecto->delete();
 
-        return redirect()->route('proyectos.index');
+        return $proyecto;
     }
 }
